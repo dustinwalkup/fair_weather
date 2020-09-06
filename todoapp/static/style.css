@@ -1,0 +1,123 @@
+.navbar-brand{
+    font-family: 'Roboto';
+    font-weight:100;
+    color:#061923;
+    margin:auto;
+    padding-right:60px;
+    letter-spacing:2px;
+}
+
+#main_content{
+    text-align:center;
+}
+
+body {
+background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+height: 100%;
+margin: 0;
+background-repeat: no-repeat;
+background-attachment: fixed;
+ }
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+#temp{
+    margin: 0 200px 0 385px;
+
+}
+
+#temp:focus {
+ border:none;
+ outline:none;
+ border-bottom:1px solid #0c8bc2;
+ background:transparent;
+
+}
+#myButton {
+    border-radius:0;
+    font-family: 'Roboto';
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.btn-outline-light {
+    color:#000000;
+    border-color: #000000;
+
+}
+th {
+    font-family: 'Roboto';
+    font-weight:400;
+    letter-spacing:2px;
+    text-transform: uppercase;
+
+}
+
+.input-container input {
+    border:0;
+    border-bottom:1px solid #061923;
+    background:transparent;
+    width:30%;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#000000;
+    font-family: 'Roboto';
+    font-weight:300;
+    letter-spacing:2px;
+    margin:auto;
+
+}
+
+.input-container input:focus{
+ border:none;
+ outline:none;
+ border-bottom:1px solid #0c8bc2;
+ background:transparent;
+}
+
+.table-green {
+    border:none;
+    outline:none;
+    border-bottom:1px solid green;
+    background:transparent;
+    font-family: 'Roboto';
+    font-weight:300;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+
+.table-green tbody tr:hover td {
+
+    background-color: green;
+}
+
+.table-red {
+    border:none;
+    outline:none;
+    border-bottom:1px solid red;
+    background:transparent;
+    font-family: 'Roboto';
+    font-weight:300;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.table {
+   margin: auto;
+   width: 50% !important;
+   text-align: center;
+   color:black;
+}

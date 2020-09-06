@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <div id="main_content">
+        <form action="add_todo/" method="POST">
+            <div class="input-container">
+                <input type="text" onkeypress="pulsar(this)" name="content" class="mb-2 mr-sm-2" autocomplete="off" placeholder="ACTIVITY">
+            </div>
+            <div class="input-container" >
+                <input type="text" name="zip" class="mb-2 mr-sm-2" autocomplete="off" placeholder="ZIP CODE">
+                <input type="number" name="temp" id="temp" autocomplete="off" class="form-control mb-2 mr-sm-2" placeholder="TEMP(F)">
+            </div>
+            <button type="submit" class="btn btn-outline-secondary mb-2 myButton" id="myButton">SUBMIT</button>
+        </form>
+    </div>
+</div>
+<table class="table table-borderless table-hover w-auto">
+    <thead>
+        <tr>
+           <th></th>
+           <th></th>
+           <th>minimum temp</th>
+           <th>current temp</th>
+           <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for todo_item in todo_items %}
+            <tr class="table_rows" id="{{todo_item.id}}">
+                <td>{{todo_item.text}}</td>
+                <td>{{todo_item.city}}</td>
+                <td class="required_temp">{{todo_item.required_temp}} °F</td>
+                <td class="current_temp">{{todo_item.current_temp}} °F</td>
+                <td class="float-right col">
+                    <form action="delete_todo/{{todo_item.id}}/" method="POST">
+                        <button type="submit" class="btn btn-outline-secondary" id="myButton">REMOVE</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
